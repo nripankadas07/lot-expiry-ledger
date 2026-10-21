@@ -1,0 +1,29 @@
+{
+  "events": [
+    {
+      "kind": "receive",
+      "id": "r1",
+      "day": 0,
+      "sku": "widget",
+      "lot": "later",
+      "quantity": 4,
+      "expires": 9
+    },
+    {
+      "kind": "receive",
+      "id": "r2",
+      "day": 0,
+      "sku": "widget",
+      "lot": "early",
+      "quantity": 3,
+      "expires": 5
+    },
+    {
+      "kind": "issue",
+      "id": "i1",
+      "day": 1,
+      "sku": "widget",
+      "quantity": 5
+    }
+  ]
+}

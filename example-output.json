@@ -1,0 +1,39 @@
+{
+  "as_of_day": 1,
+  "allocations": [
+    {
+      "event": "i1",
+      "lot": "early",
+      "quantity": 3
+    },
+    {
+      "event": "i1",
+      "lot": "later",
+      "quantity": 2
+    }
+  ],
+  "findings": [],
+  "lots": [
+    {
+      "lot": "early",
+      "sku": "widget",
+      "expires": 5,
+      "quantity": 0,
+      "expired": false
+    },
+    {
+      "lot": "later",
+      "sku": "widget",
+      "expires": 9,
+      "quantity": 2,
+      "expired": false
+    }
+  ],
+  "totals": {
+    "received": 7,
+    "issued": 5,
+    "disposed": 0,
+    "remaining": 2
+  },
+  "policy": "whole units; expires > issue day; earliest expiry then lot ID; all-or-nothing stockouts"
+}

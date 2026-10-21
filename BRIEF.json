@@ -1,0 +1,38 @@
+{
+  "occurrence": "GH-20261021",
+  "state": "VALIDATED",
+  "demand": "Inferred; no verified request for this new tool.",
+  "acceptance": [
+    "The invented issue allocates the earlier-expiring lot before the later lot; conservation remains exact.",
+    "Unit-expansion priority oracle across12 request quantities, tie/expiry boundary, atomic stockout, multi-SKU isolation, disposal conservation and invalid-state rejection.",
+    "Clean installed CLI outside checkout, error case and source preservation."
+  ],
+  "discovery": "Searchable README/topics and small reproducible example; no outreach/adoption claim.",
+  "inventory_compared": 208,
+  "mutual_distinction": "Schema evolution, OOXML formula structure, event-time state, expiry stock allocation and three-version text edits are separate products/users/contracts. Shared packaging is infrastructure.",
+  "originality": "Original AI-assisted code and invented fixtures; no third-party implementation/prose copied.",
+  "repo": "lot-expiry-ledger",
+  "user": "Warehouse planners checking a small whole-unit lot allocation scenario before importing it into an operational system.",
+  "pain": "A stock total hides expired lots, FEFO tie decisions and partial mutations caused by an unfulfillable issue.",
+  "capability": "Replay lot receipts, all-or-nothing FEFO issues and disposals with allocation witnesses and exact stock conservation.",
+  "alternatives": [
+    "odoo/odoo",
+    "frappe/erpnext",
+    "metasfresh/metasfresh"
+  ],
+  "highest": "odoo/odoo",
+  "query": "inventory expiry",
+  "topics": [
+    "inventory",
+    "fefo",
+    "traceability",
+    "python"
+  ],
+  "expected": "The invented issue allocates the earlier-expiring lot before the later lot; conservation remains exact.",
+  "limits": "Whole positive integer units, logical integer days in nondecreasing event order, globally unique event and lot IDs; <=5000 events and integer inputs within +/-10^15. Lot expiry strictly greater than issue day is eligible. Sort by earliest expires then lexical lot ID; stockouts allocate nothing and replay continues. Expired receipts remain visible; disposal may remove expired or unexpired stock, but cannot overdraw. No returns, transfers, reservations, costs, calendars, ERP connection or operational safety certification. This own simplified policy differs from ERP removal-date/reservation workflows.",
+  "distinct": "bom-rollup-ledger explodes assembly quantities; invoice rounding accounts for monetary units. This tracks expiry-qualified lot-level stock through ordered events and rejects overdraws.",
+  "checks": "Unit-expansion priority oracle across12 request quantities, tie/expiry boundary, atomic stockout, multi-SKU isolation, disposal conservation and invalid-state rejection.",
+  "primary": [
+    "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/removal_strategies/fefo.html"
+  ]
+}

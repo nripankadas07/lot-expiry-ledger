@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "lot-expiry-ledger"
+version = "0.1.0"
+description = "Replay lot receipts, all-or-nothing FEFO issues and disposals with allocation witnesses and exact stock conservation."
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+readme = "README.md"
+dependencies = []
+[project.scripts]
+lot-expiry-ledger = "lot_expiry_ledger:main"
+[tool.setuptools]
+py-modules = ["lot_expiry_ledger"]
