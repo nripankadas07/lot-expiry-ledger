@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-21",
+  "query": {
+    "query": "inventory expiry",
+    "url": "https://github.com/search?q=inventory%20expiry&type=repositories&s=stars&o=desc",
+    "observed": "2026-10-21T06:19:19.175Z"
+  },
+  "search_result_body": "Sort by: Most stars\nSave\nHarshShah0203/homedex\nThe missing inventory for your homelab: services, ports, routes and expiry dates discovered from Docker, Proxmox, Tailscale and your reve\u2026\ndocker\nnginx\ninfrastructure\ngolang\ndocumentation\nGo\n\u00b7\n66\n\u00b7\nUpdated 23 days ago\nStar\nwbrenna/inventory\nUse a barcode reader to scan the foods in your house and add them to a database. See legacy for zbarcam integration. Master integrates wi\u2026\nfood\ndatabase\ninventory\nbarcode\nupc\nPython\n\u00b7\n47\n\u00b7\nUpdated on Sep 4, 2017\nStar\nCodeitSoft-Tech/Inventory-Management-System-With-POS\nThis is an Inventory Management Web Application with a Point of Sale. It comprises stock management, sales management, warehouse manageme\u2026\ninventory\nexpenses\npoint-of-sale\nprofits\ninventory-management-system\nJavaScript\n\u00b7\n31\n\u00b7\nUpdated on Dec 17, 2021\nStar\nAnjulcodewiz/Pharmacy-management-system\n... application that deals with the day to day requirement of any pharmacy. \u2022To develop the easy management of the medicines (drugs). \u2022To\u2026\n27\n\u00b7\nUpdated on Nov 17, 2021\nStar\nkoushika31/Expiry_Alert_ReactProject\nA React-based Expiry Alert System to manage product expiry dates, with notifications and reminders for users to track and organize their i\u2026\nJavaScript\n\u00b7\n18\n\u00b7\nUpdated on May 11, 2025\nStar\nBEKO2210/Prepper_Log\nPublic archive\nPrepTrack is a free, ad-free, offline-first Progressive Web App for managing emergency supplies, pantry stock, and prepper inventories. S\u2026\nreact\nopen-source\ntypescript\npwa\nprogressive-web-app\nTypeScript\n\u00b7\n16\n\u00b7\nUpdated on Aug 24\nStar\n Sponsor\nsmos/cert-drawer\nCertifcate Inventory - Search, expiry and automation\nPHP\n\u00b7\n9\n\u00b7\nUpdated 22 hours ago\nStar\nhasanjim-dev/simple_pharmacy-billing-system\nA simple pharmacy inventory management web app \u2014 track stock, expiry dates, sales history, and suppliers.\nreact\njavascript\nbangladesh\nvite\nJavaScript\n\u00b7\n9\n\u00b7\nUpdated 22 days ago\nStar\nTheUnshackled1/PharmaStock-Local-Pharmacy-Inventory\nA Django-based Pharmacy Inventory Management System \u2014 tracks stock, manages expiry dates, processes sales, and automates product barcoding.\npython\ndjango\nsqlite\nbarcode-generator\npandas\nPython\n\u00b7\n7\n\u00b7\nUpdated on Jun 21\nStar\nhoffmang9/greenfloor\nGreenFloor is a market-making system for Chia CATs and XCH, with a manager CLI and daemon to build, post, and monitor on-chain Offers usi\u2026\ncat\nsplash\noffers\nchia-blockchain\nRust\n\u00b7\n7\n\u00b7\nUpdated 11 days ago\nStar\nPrevious1234567\u2026100Next\nSponsor open source projects you depend on\nContributors are working behind the scenes to make open source better for everyone\u2014give them the help and recognition they deserve.\nExplore sponsorable projects\nHow can we improve search? Give feedback\nProTip!\u00a0Press the / key to activate the search input again and adjust your query.",
+  "highest_star_relevant_found": "odoo/odoo",
+  "comparables": [
+    {
+      "full_name": "odoo/odoo",
+      "html_url": "https://github.com/odoo/odoo",
+      "stargazers_count": 55207,
+      "pushed_at": "2026-10-21T05:43:48Z",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "description": "Odoo. Open Source Apps To Grow Your Business.",
+      "observed": "2026-10-21T06:01:40.683Z",
+      "recent_open_items": [
+        {
+          "title": "[FIX] l10n_vn: stop padding the level 1 account codes",
+          "url": "https://github.com/odoo/odoo/pull/296683",
+          "is_pr": true,
+          "body_excerpt": "Fixes #295141.\n\n`l10n_vn` sets `code_digits` to `'4'`, and `_pre_load_data` pads every shorter code with a trailing zero. Load the Vietnamese chart and 37 of its 218 accounts on 18.0 (71 of 301 on 20.0) get a code that does not exist in Circular 200/2014/TT-BTC:\n\n```\n1110  Cash                   -> 111\n1120  Demand Deposit         -> 112\n1130  Money in transit       -> 113\n1210  Trading Securities     -> 121\n...\n```\n\nThey are printed on journals and ledgers, and they read as sub-accounts of the real ones, 1310 sitting right next to 1311.\n\nThe chart mixes 3, 4, 5 and 6 digit codes by design, so there is nothing to standardise: `'3'` is the width of its shortest code, so nothing is padded. 17.0 had `'0'` here, the `'4'` arrived with the conversion to the new format (`d782b8b92557`).\n\nThe accounts built from a prefix keep their codes, because the template maps all of them to chart entries. Loading the chart before and after the change, the whole diff is those 37 codes:\n\n```\n218 accounts b"
+        },
+        {
+          "title": "[FIX] account,portal: make the iframe responsive",
+          "url": "https://github.com/odoo/odoo/pull/296682",
+          "is_pr": true,
+          "body_excerpt": "The iframe in the invoice preview is not scaled to its page dimensions. As a result, report templates designed to be displayed on an A4 or US paper format are rendered at dimensions that are not compatible with the layout, which is optimized for PDF rendering.\r\n\r\nThe iframe should therefore scale the report to fit the available preview space, rather than requiring report templates to adapt their styling to the preview viewport.\r\n\r\nThis keeps the report layout consistent with the PDF output and avoids introducing report-specific CSS overrides that could affect other PDF reports.\r\n\r\ntask-6636298\r\n\r\n\r\n---\r\nI confirm I have signed the CLA and read the PR guidelines at www.odoo.com/submit-pr\n\nForward-Port-Of: odoo/odoo#296022\nForward-Port-Of: odoo/odoo#293277"
+        },
+        {
+          "title": "[FIX] project: show all subtask assignees on kanban",
+          "url": "https://github.com/odoo/odoo/pull/296681",
+          "is_pr": true,
+          "body_excerpt": "Steps to reproduce:\r\n- Open Project > Tasks in Kanban view\r\n- Create a task with several assignees\r\n- Create a sub-task from that task (it inherits all assignees)\r\n- Expand the parent card's sub-task list\r\n- Only one assignee avatar is shown on the sub-task row, even though all assignees were inherited.\r\n\r\nCause:\r\n- Since the RelationalModel applies a fake limit of 1 on `x2many`fields that have no nested related fields, sub-task `user_ids` loaded in `toggleSubtasksList()` with a `makeActiveField()` only kept one record in `.records`.\r\n\r\n- The kanban avatar widget builds tags from `.records`, so only one assignee was displayed.\r\n\r\nFix:\r\n- Load nested related fields on sub-task `user_ids`, so all assignees are fetched and shown.\r\n\r\ntask-6428173\n\nForward-Port-Of: odoo/odoo#281947"
+        }
+      ]
+    },
+    {
+      "full_name": "frappe/erpnext",
+      "html_url": "https://github.com/frappe/erpnext",
+      "stargazers_count": 40412,
+      "pushed_at": "2026-10-21T05:55:34Z",
+      "license": {
+        "key": "gpl-3.0",
+        "name": "GNU General Public License v3.0",
+        "spdx_id": "GPL-3.0",
+        "url": "https://api.github.com/licenses/gpl-3.0",
+        "node_id": "MDc6TGljZW5zZTk="
+      },
+      "description": "Free and Open Source Enterprise Resource Planning (ERP)",
+      "observed": "2026-10-21T06:01:40.265Z",
+      "recent_open_items": [
+        {
+          "title": "merge queue: checking #60574 + #60639 together on develop (5b50b08)",
+          "url": "https://github.com/frappe/erpnext/pull/61722",
+          "is_pr": true,
+          "body_excerpt": "> [!NOTE]\n> **This is a merge queue draft opened by Mergify. Nobody needs to act on it.**\n> Mergify opened it for batch **ultimate-gesier-kv34xu** of the `default` queue, to test [#60574](/frappe/erpnext/pull/60574) and [#60639](/frappe/erpnext/pull/60639) before they merge into `develop`. Pushing to this branch or closing this pull request removes them from the queue.\n\n### What this draft tests\n\nMergify checks that [#60574](/frappe/erpnext/pull/60574) and [#60639](/frappe/erpnext/pull/60639) still pass CI on top of `develop`. CI runs on this draft's code, built in this order:\n\n1. `develop` at [`5b50b08`](/frappe/erpnext/commit/5b50b08c48f31b1f7b05dec137137d4a9f0af68d)\n2. [#60574](/frappe/erpnext/pull/60574) + [#60639](/frappe/erpnext/pull/60639), the pull requests of this batch, tested together as one tip\n\n### \u23f3 Where it stands: being checked\n\nCI is running on this draft.\n\n**Waiting for**\n\n- [ ] `check-success=Patch Test`\n- [ ] `check-success=Python Unit Tests (1)`\n- [ ] `check-succes"
+        },
+        {
+          "title": "merge queue: checking #61703 + #61662 together on version-15-hotfix (470c07c)",
+          "url": "https://github.com/frappe/erpnext/pull/61721",
+          "is_pr": true,
+          "body_excerpt": "> [!NOTE]\n> **This is a merge queue draft opened by Mergify. Nobody needs to act on it.**\n> Mergify opened it for batch **resolute-choucroute-rr9zy7** of the `default` queue, to test [#61703](/frappe/erpnext/pull/61703) and [#61662](/frappe/erpnext/pull/61662) before they merge into `version-15-hotfix`. Pushing to this branch or closing this pull request removes them from the queue.\n\n### What this draft tests\n\nMergify checks that [#61703](/frappe/erpnext/pull/61703) and [#61662](/frappe/erpnext/pull/61662) still pass CI on top of `version-15-hotfix`. CI runs on this draft's code, built in this order:\n\n1. `version-15-hotfix` at [`470c07c`](/frappe/erpnext/commit/470c07c89013e2b0acbcbb114057e52f9d20c8c2)\n2. [#61703](/frappe/erpnext/pull/61703) + [#61662](/frappe/erpnext/pull/61662), the pull requests of this batch, tested together as one tip\n\nThis is attempt 2: the checks of an earlier draft of this batch failed, and Mergify runs them again. The earlier drafts are listed below.\n\n### \u23f3 Wh"
+        },
+        {
+          "title": "fix(stock): avoid counting standalone deliveries twice in credit checks",
+          "url": "https://github.com/frappe/erpnext/pull/61720",
+          "is_pr": true,
+          "body_excerpt": "### Issue\r\n\r\n- With Bypass credit limit check at Sales Order enabled, submitting a standalone Delivery Note can incorrectly exceed the customer's credit limit. The submitted note is already included in the customer's outstanding balance, but its full total is added again.\r\n\r\n### Steps to replicate\r\n1. Set a customer's company credit limit to 1,000 and enable Bypass credit limit check at Sales Order.\r\n2. Ensure the customer has no existing outstanding balance and use a user without the credit-controller override role.\r\n3. Create an unbilled standalone Delivery Note for 600 in company currency, without a Sales Order or Sales Invoice reference.\r\n4. Submit the Delivery Note.\r\n\r\n### Actual behavior\r\n- The credit check counts 1,200 and rejects the Delivery Note even though the actual exposure is 600.\r\n\r\n### Expected behavior\r\n- Count the standalone Delivery Note once and allow submission when total exposure is within the limit. Continue checking uninvoiced Sales Order-linked rows when the Sa"
+        }
+      ]
+    },
+    {
+      "full_name": "metasfresh/metasfresh",
+      "html_url": "https://github.com/metasfresh/metasfresh",
+      "stargazers_count": 2455,
+      "pushed_at": "2026-10-21T05:47:35Z",
+      "license": null,
+      "description": "We do Open Source ERP - Fast, Flexible & Free Software to scale your Business.",
+      "observed": "2026-10-21T06:01:40.616Z",
+      "recent_open_items": [
+        {
+          "title": "Merge soft_panda_hotfix into new_dawn_uat",
+          "url": "https://github.com/metasfresh/metasfresh/pull/26690",
+          "is_pr": true,
+          "body_excerpt": "Merge-up of `soft_panda_hotfix` into `new_dawn_uat` (merge commit, no squash).\n\nBrings to `new_dawn_uat` among others: the ISO 20022 2019 port follow-ups (null-safe unpaid-invoice lookup + its test), the archived-PDF cucumber step additions incl. the QR-bill creditor `IsPOESR` option of the SQL-function step, the GRAI screen send-in-flight fix and the mobile scanner stable-listener test.\n\nConflict resolutions (merge commit https://github.com/metasfresh/metasfresh/commit/cf27a6dfd9e):\n- `e2e/mobile-webui/TEST-COVERAGE.md`: kept deleted, `new_dawn_uat` retired both `TEST-COVERAGE.md` files.\n- `de.metas.cucumber` `pom.xml`, `Readme.md`, `AD_Archive_StepDef.java`, `archivedPdfAssertions.feature`: `new_dawn_uat` version. The `soft_panda_hotfix` copies are a backport subset of these originals (every step and scenario of the hotfix copy exists here).\n- `PaymentAllocationServiceTest`: both sides, the `new_dawn_uat` tests plus `retrieveUnpaidInvoices_noUnpaidInvoice_returnsEmptyList` from `soft"
+        },
+        {
+          "title": "ISO 20022 2019 \u2014 port camt53 chain, pain.001.001.09.ch.03, camt.053.001.08, camt.054 to big_coconut_uat",
+          "url": "https://github.com/metasfresh/metasfresh/pull/26685",
+          "is_pr": true,
+          "body_excerpt": "## Summary\n\nISO 20022 2019 port to `big_coconut_uat` in one PR (this branch has no separate chain PR). Ports from `new_dawn_uat`:\n\n- camt53 base chain (camt.053 import file attachments, `C_BankStatement` import process, attachment-link listeners re-designed on this branch's `AttachmentReference` API; all listeners veto before the first link is saved)\n- backup of `C_Payment`, `C_BankStatement`, `C_BankStatementLine` before migration 5665510 converts their date columns (5665509)\n- pain.001.001.09.ch.03 export (QR-IBAN vendor account when the account has no IBAN, bank account address on `BankAccount`, translated messages, error codes for the new SEPA messages)\n- camt.053.001.08 import with parity tests\n- camt.054.001.02 / .05 / .06 / .08 import: a payment without remittance info becomes an error line (RF / SCOR handling already present on this branch)\n- generated JAXB sources for camt.053.001.08 and pain.001.001.09.ch.03\n- small fixes: NPE when no unpaid invoice matches, javax `Nullable` "
+        },
+        {
+          "title": "Payment bonus: split the Zahlungsbonus-Gutschrift credit memo per project (C_Project_ID)",
+          "url": "https://github.com/metasfresh/metasfresh/pull/26680",
+          "is_pr": true,
+          "body_excerpt": "## What\n\nThe payment-bonus (\"Zahlungsbonus\") credit memo now carries `C_Project_ID` on its deduction lines. Matching invoice lines are grouped by (bonus product, `C_Project_ID`), so the credit memo gets one line per project; invoice lines with no project fold into a single project-less line.\n\n## Totals unchanged\n\nThe bonus amount is still computed and rounded **once** per bonus product (`base \u00d7 percent`, rounded to the currency precision), exactly as before. That rounded total is then apportioned across the per-project lines by the **largest-remainder** method (whole smallest-currency units; never re-rounded per project), so the per-project lines always sum to the same total to the cent. On equal remainders the lower `C_Project_ID` gets the extra unit first (project-less last); a project whose apportioned share is zero gets no line.\n\n## Changes\n\n- `PaymentBonusDeductionService` \u2014 capture the source line's project on `InvoiceLineInfo`; group matching lines by (bonus product, project) fo"
+        }
+      ]
+    }
+  ],
+  "primary_sources": [
+    "https://www.odoo.com/documentation/19.0/applications/inventory_and_mrp/inventory/shipping_receiving/removal_strategies/fefo.html"
+  ],
+  "limits": "Keyword searches are scoped, not global rankings. Established relevant alternatives were supplemented directly. Broader/irrelevant keyword leaders are excluded by README scope. No competitor installed/timed or absence/superiority/support-quality claim. Current issue samples may be PRs and are not verified demand for this tool."
+}
